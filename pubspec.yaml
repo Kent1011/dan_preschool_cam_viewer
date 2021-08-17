@@ -1,0 +1,33 @@
+name: dan_preschool_cam_viewer
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  fijkplayer: ^0.10.0
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^0.14.0+3
+  http: ^0.13.3
+  shared_preferences: ^2.0.6
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.9.1
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  image_path_android: "assets/dan_logo.png"
+  image_path_ios: "assets/dan_logo.png"
+  android: true
+  ios: true
+  remove_alpha_ios: true
+
+flutter:
+  uses-material-design: true
