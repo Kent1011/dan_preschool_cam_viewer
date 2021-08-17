@@ -39,7 +39,11 @@ class _CameraViewPageState extends State<CameraViewPage> {
     return Scaffold(
       appBar: CustomAppBar(title: widget.parameters.cameraName),
       body: Center(
-        child: FijkView(player: player),
+        child: FijkView(
+          player: player,
+          color: Colors.black87,
+          fsFit: FijkFit.fitWidth,
+        ),
       ),
     );
   }
