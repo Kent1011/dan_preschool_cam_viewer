@@ -23,10 +23,9 @@ dev_dependencies:
     sdk: flutter
 
 flutter_icons:
-  image_path_android: "assets/dan_logo.png"
-  image_path_ios: "assets/dan_logo.png"
-  android: true
+  android: 'launcher_icon'
   ios: true
+  image_path: 'assets/dan_logo_color.png'
   remove_alpha_ios: true
 
 flutter:
