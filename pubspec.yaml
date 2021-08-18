@@ -1,5 +1,5 @@
 name: dan_preschool_cam_viewer
-description: A new Flutter project.
+description: Camera viewer of my son's preschool
 
 publish_to: "none"
 
@@ -9,13 +9,12 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  cupertino_icons: ^1.0.2
-  fijkplayer: ^0.10.0
   flutter:
     sdk: flutter
+  cupertino_icons: ^1.0.2
+  fijkplayer: ^0.10.0
   flutter_riverpod: ^0.14.0+3
   http: ^0.13.3
-  shared_preferences: ^2.0.6
 
 dev_dependencies:
   flutter_launcher_icons: ^0.9.1
@@ -23,9 +22,9 @@ dev_dependencies:
     sdk: flutter
 
 flutter_icons:
-  android: 'launcher_icon'
+  android: "launcher_icon"
   ios: true
-  image_path: 'assets/dan_logo_color.png'
+  image_path: "assets/dan_logo_color.png"
   remove_alpha_ios: true
 
 flutter:
