@@ -24,8 +24,8 @@ class _CameraViewPageState extends State<CameraViewPage> {
       widget.parameters.camera.getStreamUrl(),
       autoPlay: true,
     );
-    player.setOption(FijkOption.formatCategory, "rtsp_transport", "tcp");
-    player.setOption(FijkOption.playerCategory, "packet-buffering", "0");
+    player.setOption(FijkOption.formatCategory, 'rtsp_transport', 'tcp');
+    player.setOption(FijkOption.playerCategory, 'packet-buffering', '0');
   }
 
   @override
@@ -37,7 +37,10 @@ class _CameraViewPageState extends State<CameraViewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomAppBar(title: widget.parameters.cameraName),
+      appBar: CustomAppBar(
+        title: widget.parameters.cameraName,
+        brightness: Brightness.dark,
+      ),
       body: Center(
         child: FijkView(
           player: player,
