@@ -2,6 +2,7 @@ import 'package:dan_preschool_cam_viewer/pages/camera_view/camera_view_model.dar
 import 'package:dan_preschool_cam_viewer/widgets/custom_app_bar.dart';
 import 'package:fijkplayer/fijkplayer.dart';
 import 'package:flutter/material.dart';
+import 'package:wakelock/wakelock.dart';
 
 class CameraViewPage extends StatefulWidget {
   static const ROUTER_NAME = '/camera-view';
@@ -20,6 +21,7 @@ class _CameraViewPageState extends State<CameraViewPage> {
   @override
   void initState() {
     super.initState();
+    Wakelock.enable();
     player.setDataSource(
       widget.parameters.camera.getStreamUrl(),
       autoPlay: true,
@@ -31,6 +33,7 @@ class _CameraViewPageState extends State<CameraViewPage> {
   @override
   void dispose() {
     player.release();
+    Wakelock.disable();
     super.dispose();
   }
 
